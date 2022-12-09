@@ -13,7 +13,7 @@ int system(const char *command);
 int main(void)
 {
 
-	char quote[80] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	system(">&2 echo $quote \n");
 	return (1);
 }
