@@ -1,20 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-/**
- * system - to allow system calls
- * @command: add a command here
- * Return: an integer showing success or failure
- */
-int system(const char *command);
-
+#include <unistd.h>
 /**
  * main - print some quotes
  * Return:  an error
  **/
 int main(void)
 {
-int (*sys)(char*) = system;
-
-sys(">&2 echo 'and that piece of art is useful\" - Dora Korpar, 2015-10-19'");
+write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 63);
 return (1);
 }
