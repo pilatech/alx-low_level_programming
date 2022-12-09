@@ -22,4 +22,3 @@ int main(void)
 	printf("Size of a float: %d byte(s)\n", (int) sizeof(e));
 	return (0);
 }
-
