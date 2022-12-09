@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - to check the data type sizes                             
- * Return: whether successful or not                               
+ * main - to check the data type sizes
+ * Return: whether successful or not
  */
 int main(void)
 {
