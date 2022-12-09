@@ -13,6 +13,6 @@ int system(const char *command);
  **/
 int main(void)
 {
-system(">&2 echo and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+system(">&2 cat 'and that piece of art is useful\" - Dora Korpar, 2015-10-19'");
 return (1);
 }
