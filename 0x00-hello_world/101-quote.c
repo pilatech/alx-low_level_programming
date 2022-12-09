@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * sy - to allow system calls
+ * system - to allow system calls
+ * @command: add a command here
  * Return: an integer showing success or failure
  */
-int sy(const char *command);
+int system(const char *command);
 
 /**
  * main - print some quotes
@@ -12,6 +13,6 @@ int sy(const char *command);
  **/
 int main(void)
 {
-sy(">&2 echo 'and that piece of art is useful\" - Dora Korpar, 2015-10-19' \n");
+system(">&2 echo and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 return (1);
 }
