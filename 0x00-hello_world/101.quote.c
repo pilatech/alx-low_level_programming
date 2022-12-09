@@ -16,3 +16,4 @@ int main(void)
 	system(cmd);
 	return (1);
 }
+~  
