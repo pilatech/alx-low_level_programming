@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-int n = 0;
+int n = 48;
 
-while (n < 10)
+while (n < 58)
 {
-	printf("%i", n);
+	putchar(n);
 	n++;
 }
-printf("\n");
+putchar(10);
 return (0);
 }
