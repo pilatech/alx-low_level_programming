@@ -13,8 +13,7 @@ while (n < 58)
 {
 if ((n == 50) || (n == 52))
 	continue;
-else
-	_putchar(n);
+_putchar(n);
 n++;
 }
 _putchar(10);
