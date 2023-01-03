@@ -1,16 +1,18 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * swap_int - swaps two integers
- * @a: the first number
- * @b: the second number
+ *swap_int- interchanges a and b
+ *@a:checked
+ *@b: checked
+ *Return:nothing
  */
-
 void swap_int(int *a, int *b)
 {
-	int val;
+	int swap;
 
-	val = *a;
+	swap = *a;
+
 	*a = *b;
-	*b = val;
+
+	*b = swap;
 }
+
