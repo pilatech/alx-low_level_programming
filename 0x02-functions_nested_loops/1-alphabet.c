@@ -1,19 +1,19 @@
-#ifndef HOLBERTON_H
-#include "holberton.h"
-#endif
+#include "main.h"
+
 /**
- * print_alphabet - order from a to z
- *
- *Return: x
+ * print_alphabet - Entry point
+ * Return:0
  */
 
 void print_alphabet(void)
 {
-	char x;
+	char c = 'a';
 
-	for (x = 'a'; x <= 'z'; x++)
+	while (c <= 'z')
 	{
-		_putchar(x);
+		_putchar(c);
+		c++;
+
 	}
 	_putchar('\n');
 
