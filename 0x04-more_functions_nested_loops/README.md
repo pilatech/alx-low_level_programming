@@ -1,1 +1,4 @@
-More functions and nested loops in C
+More functions, more nested loops
+===============
+Lets go deeper
+---------------

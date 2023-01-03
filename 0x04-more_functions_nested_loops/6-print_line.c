@@ -1,26 +1,18 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_line - print a line
- * @n: number of times
- *
+ *print_line- prints line
+ *@n: checked
  * Return: nothing
  */
-
 void print_line(int n)
 {
-if (n <= 0)
-{
-_putchar(10);
-}
-else
-{
-int i = 0;
-while (i < n)
-{
-_putchar(95);
-i++;
-}
-_putchar(10);
-}
+	int i;
+
+	if (n > 0)
+	{
+		for (i = 1; i <= n; i++)
+			_putchar('_');
+	}
+	_putchar('\n');
 }

@@ -1,16 +1,20 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _isupper - checks whether a letter is uppercase or not
- * @c: the letter
+ *_isupper - check if int c is upper
  *
- * Return: 0 or 1
+ * @c: int checked
+ * Return: 1 if upper,0 if  loweer
  */
 
-int _isupper(int c)
+int  _isupper(int c)
 {
-if ((c > 64) && (c < 91))
-	return (1);
-else
-	return (0);
+	if (c  >= 65  &&  c  <= 90)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

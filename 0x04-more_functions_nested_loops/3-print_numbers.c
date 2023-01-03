@@ -1,18 +1,16 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * print_numbers - print 0 to 9
+ *print_numbers- displays integer  0 -9
  *
- * Return: nothing
+ *Return: always 0
  */
-
 void print_numbers(void)
 {
-int n = 48;
-while (n < 58)
-{
-_putchar(n);
-n++;
-}
-_putchar(10);
+	int num;
+
+	for (num = 0; num < 10; num++)
+	{
+		_putchar((num % 10) + '0');
+	}
+	_putchar('\n');
 }
