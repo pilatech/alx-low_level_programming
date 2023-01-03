@@ -1,37 +1,21 @@
-#include "holberton.h"
-void more_numbers(void);
+#include "main.h"
 
 /**
- *more_numbers - order from 1 to 14 ten times
- *
- *Return: 10x  number list
+ * more_numbers - prints 10 times the numbers, from 0 to 14
+ * followed by a new line
  */
-
 void more_numbers(void)
 {
+	int i, j;
 
-	char i, j, k;
-
-	int l;
-
-	for (l = 0; l <= 9; l++)
+	for (i = 0; i < 10; i++)
 	{
-		k = '9';
-		for (i = '0'; i <= '1'; i++)
+		for (j = 0; j < 15; j++)
 		{
-
-			for (j = '0'; j <= k; j++)
-			{
-				if (i > '0')
-
-					_putchar(i);
-				_putchar(j);
-			}
-			k = '4';
+			if (j >= 10)
+				_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
 		}
 		_putchar('\n');
 	}
 }
-
-
-
