@@ -1,19 +1,20 @@
-/**
- * _memset - fills first n bytes of given memory add with b
- * @s: the memory location to populate
- * @b: the char to populate with
- * @n: number of bytes to populate
- *
- * Return: pointer to the memory s
- */
+#include "holberton.h"
 
+/**
+ *_memset- assign memory location to n byte
+ *@s: A pointer to the memory area to be filled.
+ *@b: The character to fill the memory area with.
+ *@n: The number of bytes to be filled.
+ *Return: memory
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int i;
+	unsigned int ln;
 
-for (i = 0; i < n; i++)
-{
-*(s + i) = b;
-}
-return (s);
+	char *memory = s, value = b;
+
+	for (ln = 0; ln < n; ln++)
+		memory[ln] = value;
+
+	return (memory);
 }

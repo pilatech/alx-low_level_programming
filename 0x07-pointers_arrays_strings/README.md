@@ -1,1 +1,7 @@
-Tasks on pinters, arrays and strings in C
+**Backle up they coming**
+============================
+**Even more**
+------------------------
+-  Pointers
+-  Arrays 
+- Strings
