@@ -18,4 +18,3 @@ else
 	printf("%d, ", n);
 n++;
 }
-{
