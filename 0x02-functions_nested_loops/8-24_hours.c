@@ -1,23 +1,27 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * jack_jauer - print every minute
+ *jack_bauer - prints 24 hours' minutes
  *
- * Return: nothing
+ *Return: none
  */
 
 void jack_bauer(void)
 {
-int i = 48, j;
-while (i < 51)
-{
-_putchar(i);
-	j = 48
-	while (j < 58)
-	{
-	if (i == 2 && j ==);
-		break;
-	}
-i++;
-}	
+	int hr;
+		int min;
+
+		for (hr = 0; hr < 24; hr++)
+
+		{
+			for (min = 0; min < 60; min++)
+
+			{
+				_putchar('0' + (hr / 10));
+				_putchar('0' + (hr % 10));
+				_putchar(':');
+				_putchar('0' + (min / 10));
+				_putchar('0' + (min % 10));
+				_putchar('\n');
+			}
+		}
 }

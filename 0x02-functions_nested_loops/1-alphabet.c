@@ -1,17 +1,20 @@
-#include "main.h"
-
+#ifndef HOLBERTON_H
+#include "holberton.h"
+#endif
 /**
- * print_alphabet - print all lowercase letters
- * Return - nothing
+ * print_alphabet - order from a to z
+ *
+ *Return: x
  */
 
 void print_alphabet(void)
 {
-int i = 97;
-while (i < 123)
-{
-_putchar(i);
-i++;
-}
-_putchar(10);
+	char x;
+
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		_putchar(x);
+	}
+	_putchar('\n');
+
 }

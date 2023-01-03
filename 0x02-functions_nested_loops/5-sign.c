@@ -1,27 +1,28 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_sign - prints the sign for a number
- * @n: the number
+ *print_sign - (+ if 1), (0 if 0), (- if < 0)
  *
- * Return: -1, 0 or 1
+ * @n: int checked
+ *
+ *Return: return the sign
+ *
  */
-
 int print_sign(int n)
 {
-if (n > 0)
-{
-_putchar(43);
-return (1);
-}
-else if (n < 0)
-{
-_putchar(45);
-return (-1);
-}
-else
-{
-_putchar(48);
-return (0);
-}
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar('0');
+		return (0);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }
