@@ -1,35 +1,24 @@
-#include "holberton.h"
+#include "main.h"
 /**
- *_strncat- append string
- *@dest: checked
- *@src: checked
- *@n: checked
- *Return: dest
- */
-
+* _strncat - concatenate strings
+* Return: concatednated string
+* @dest: start at
+* @src: added
+* @n: max size to add
+*/
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
-
-	i = 0;
-
-	j = 0;
-
-	while (*(dest + i) != '\0')
-	{
-		i++;
-		j++;
-	}
-
-	i = 0;
-
-	while (*(src + i) != *(src + n))
-	{
-		dest[j] = src[i];
-		i++;
-		j++;
-	}
-	dest[j] = '\0';
-
-	return (dest);
+int i, j;
+char *result, *final_result;
+final_result = result;
+for (i = dest; *i != '\n'; i++, result++)
+{
+*result = *i;
+}
+for (j = src; j <= src + n; j++, result++)
+{
+*result = *j;
+}
+*result = '\n';
+return final_result;
 }
