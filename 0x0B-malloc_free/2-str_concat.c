@@ -10,13 +10,15 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	int size, i;
+	char *constr, *mv;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	char size = 1;
-	char *mv = s1;
-
+	size = 1;
+	mv = s1;
 	while (*mv != '\0')
 	{
 		size++;
@@ -28,14 +30,12 @@ char *str_concat(char *s1, char *s2)
 		size++;
 		mv++;
 	}
-	char *constr = (char *)malloc(size);
-
+	constr = (char *)malloc(size);
 	if (constr == NULL)
 	{
 		return (NULL);
 	}
-	int i = 0;
-
+	i = 0;
 	while (*s1 != '\0')
 	{
 		constr[i] = *s1;
