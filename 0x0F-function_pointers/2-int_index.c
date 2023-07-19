@@ -1,3 +1,4 @@
+#include <stddef.h>
 /**
  * int_index - searches for an integer in an array.
  * @array: pointer to the first element of the array.
@@ -12,7 +13,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (size <= 0)
 		return (-1);
-	if (array != NULL || cmp != NULL)
+	if (array != NULL && cmp != NULL)
 	{
 		for (i = 0; i < size; i++)
 		{
@@ -22,4 +23,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 		return (-1);
 	}
+	return (0);
 }
