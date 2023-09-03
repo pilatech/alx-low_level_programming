@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * print_binary - print binary representation of a number.
  * @n: the number.
@@ -27,7 +27,7 @@ void print_binary(unsigned long int n)
 		}
 		else
 			_putchar('0');
-		h_square >>= 1;	
-		pow--;	
+		h_square >>= 1;
+		pow--;
 	}
 }
