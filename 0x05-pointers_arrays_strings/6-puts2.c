@@ -1,8 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 /**
- *puts2- print skip one number
- *@str:checked
- *Return:nothing
+ * puts2- print skip one number
+ * @str: the string to print from.
+ *
+ * Return:nothing
  */
 void puts2(char *str)
 {
@@ -14,6 +15,7 @@ void puts2(char *str)
 		_putchar(str[i]);
 		i += 2;
 	}
+	_putchar('\0');
 	_putchar('\n');
 }
 
