@@ -10,7 +10,7 @@ void puts_half(char *str)
 	/* get length of the string */
 	/* divide the length by 2 to get the index to start at */
 
-	int i;
+	int i, len;
 
 	if (str)
 	{
