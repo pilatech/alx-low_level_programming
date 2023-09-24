@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *_strlen- counts string exccept \0
  *@s: checked
@@ -6,14 +6,11 @@
  */
 int _strlen(char *s)
 {
-	int i;
+	int len = 0;
 
-	for (i = 0; s[i] != '\0'; ++i)
-	{
-		;
-	}
-	return (i);
-
+	while (s[len])
+		len++;
+	return (len);
 }
 
 

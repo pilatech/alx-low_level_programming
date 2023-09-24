@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
   *rev_string- prints in reverse
@@ -6,34 +7,18 @@
  *@s: checked
  *Return: nothing
  */
-int _strlen(char *s)
+int _strlen(char *str)
 {
+int len;
 
-	int i, len;
-
-	len = 0;
-
-	for (i = 0; s[i] != '\0'; ++i)
-	{
-		len++;
-	}
-	return (len);
+len = 0;
+while (str[len])
+	len++;
+printf("Length of %s => %d\n", str, len);
+return (len);
 }
 
-void rev_string(char *s)
+void rev_string(char *str)
 {
-	int strsize = _strlen(s);
-	int i;
-
-	char c;
-
-	i = 0;
-
-	while (i < (strsize / 2))
-	{
-		c = *(s + i);
-		*(s + i) = *(s + strsize - 1 - i);
-		*(s + strsize - 1 - i) = c;
-		i++;
-	}
+	_strlen(str);
 }
