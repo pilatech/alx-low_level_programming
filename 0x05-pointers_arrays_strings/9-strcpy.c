@@ -1,23 +1,21 @@
-#include "holberton.h"
+#include "main.h"
 /**
- *_strcpy- copies string
- *@dest:checked
- *@src: checked
- *Return: dest
+ * _strcpy- copies string to a given space
+ * @dest: where to copy from.
+ * @src: where to copy to
+ * Return: dest
  */
-
 
 char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
-
-	while (src[i])
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = '\0';
 
 	return (dest);
 }
