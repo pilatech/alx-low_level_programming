@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -7,18 +7,37 @@
  *@s: checked
  *Return: nothing
  */
+void rev_string(char *s)
+{
+	int len, start, end, center;
+	char temp;
+
+	if (s)
+	{
+		len = _strlen(s);
+		center = len / 2;
+		for (start = 0, end = len - 1; start < center; start++, end--)
+		{
+			temp = s[start];
+			s[start] = s[end];
+			s[end] = temp;
+		}
+	}
+}
+
+/**
+ * _strlen - find length of a string.
+ * @str: the string.
+ *
+ * Return: the length.
+ */
 int _strlen(char *str)
 {
-int len;
+int len = 0;
 
-len = 0;
 while (str[len])
 	len++;
-printf("Length of %s => %d\n", str, len);
 return (len);
 }
 
-void rev_string(char *str)
-{
-	_strlen(str);
-}
+
