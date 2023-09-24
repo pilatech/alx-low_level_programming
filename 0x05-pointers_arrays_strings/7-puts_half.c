@@ -1,26 +1,40 @@
-#include "holberton.h"
+#include "main.h"
 /**
- *puts_half- print half
- *@str:checked
- *Return:nothing
+ * puts_half- print half
+ * @str: checked
+ * Return: nothing
  */
 void puts_half(char *str)
 {
+	/* make sure the string is actually not NULL */
+	/* get length of the string */
+	/* divide the length by 2 to get the index to start at */
 
-	int i, n;
+	int i;
 
-	i = 0;
-
-	while (*(str + i) != '\0')
+	if (str)
 	{
-		i++;
+		i = _strlen(str) / 2;
+		while (str[i] != '\0')
+		{
+			_putchar(str[i]);
+			i++;
+		}
+		_putchar('\n');
 	}
-	n = i / 2;
-	while (n <= i)
-	{
-		_putchar(str[n]);
-		n++;
+}
 
-	}
-	_putchar('\n');
+/**
+ * _strlen - find length of a string.
+ * @str: the string.
+ *
+ * Return: length of the string.
+ */
+int _strlen(char *str)
+{
+	int len = 0;
+
+	while (str[len] != '\0')
+		len++;
+	return (len);
 }
