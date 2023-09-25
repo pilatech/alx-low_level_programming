@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * _strncat - concatenate strings
 * Return: concatednated string
@@ -8,16 +9,31 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-int i = 0;
-int j = 0;
-while (dest[i] != '\n')
-	i++;
-while (j < n)
-{
-dest[i] = src[j];
-i++;
-j++;
-}
-dest[i] = '\n';
-return (dest);
+	int len, i, j = 0;
+
+	for (len = 0; src[len] != '\0'; len++)
+		;
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+
+	if (len <= n)
+	{
+		while (src[j] != '\0')
+		{
+			dest[i] = src[j];
+			i++;
+			j++;
+		}
+	}
+	else
+	{
+		while (j < n)
+		{
+			dest[i] = src[j];
+			i++;
+			j++;
+		}
+	}
+	dest[i] = '\0';
+	return (dest);
 }
