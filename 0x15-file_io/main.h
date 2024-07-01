@@ -15,6 +15,7 @@ int _close(int fd, int ret);
 int append_text_to_file(const char *filename, char *text_content);
 void _closeerr(int d);
 void _fileerr(char *file, char mode, int s_code);
+ssize_t shutdown(int fd, char *buff, ssize_t val);   
 
 
 #endif
