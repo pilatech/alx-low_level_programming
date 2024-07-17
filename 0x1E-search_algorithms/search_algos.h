@@ -1,6 +1,8 @@
-#ifndef __SEARCH_ALGOS_H__
-#define __SEARCH_ALGOS_H__
+#ifndef __SEARCH_ALGOS_H_
+#define __SEARCH_ALGOS_H_
 
-int linear_search(int *arr, size_t size, int value);
+#include <stdio.h>
+
+int linear_search(int *array, size_t size, int value);
 
 #endif
